@@ -1,0 +1,24 @@
+{
+	"name": "eslint-config-dzh",
+	"version": "1.0.0",
+	"main": "./packages/base/index.js",
+	"module": "./packages/base/index.js",
+	"exports": {
+		"./vue2": {
+			"import": "./packages/vue2/index.js",
+			"require": "./packages/vue2/index.js"
+		},
+		"./vue3": {
+			"import": "./packages/vue3/index.js",
+			"require": "./packages/vue3/index.js"
+		}
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^8.46.1",
+		"@typescript-eslint/parser": "^8.46.1",
+		"eslint": "^9.38.0",
+		"eslint-define-config": "^2.1.0",
+		"eslint-plugin-eslint-comments": "^3.2.0",
+		"eslint-plugin-import": "^2.32.0"
+	}
+}

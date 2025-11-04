@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"main": "./packages/base/index.js",
 	"module": "./packages/base/index.js",
+	"type": "module",
 	"exports": {
 		"./vue2": {
 			"import": "./packages/vue2/index.js",
@@ -13,12 +14,11 @@
 			"require": "./packages/vue3/index.js"
 		}
 	},
-	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^8.46.1",
-		"@typescript-eslint/parser": "^8.46.1",
-		"eslint": "^9.38.0",
-		"eslint-define-config": "^2.1.0",
-		"eslint-plugin-eslint-comments": "^3.2.0",
-		"eslint-plugin-import": "^2.32.0"
+	"scripts": {
+		"publish:vue2": "node index.js && cd packages/vue2 && npm publish",
+		"publish:vue3": "node index.js && cd packages/vue3 && npm publish"
+	},
+	"dependencies": {
+		"fs-extra": "^11.3.2"
 	}
 }

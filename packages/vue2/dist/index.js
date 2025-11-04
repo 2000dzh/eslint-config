@@ -2,7 +2,7 @@ const { defineConfig } = require('eslint-define-config')
 
 module.exports = defineConfig({
   extends: [
-    require.resolve('eslint-config-dzh-base/index.js'),
+    require.resolve('./base/index.js'),
     'plugin:vue/recommended'
   ]
 })

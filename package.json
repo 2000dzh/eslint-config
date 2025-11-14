@@ -15,8 +15,8 @@
 		}
 	},
 	"scripts": {
-		"publish:vue2": "node index.js && cd packages/vue2 && npm publish",
-		"publish:vue3": "node index.js && cd packages/vue3 && npm publish"
+		"publish:vue2": "cd packages/vue2 && npm publish",
+		"publish:vue3": "cd packages/vue3 && npm publish"
 	},
 	"dependencies": {
 		"fs-extra": "^11.3.2"

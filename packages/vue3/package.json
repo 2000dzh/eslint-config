@@ -1,26 +1,31 @@
 {
 	"name": "eslint-config-dzh-vue3",
-	"version": "1.0.0",
-	"main": "./dist/index.js",
-	"module": "./dist/index.js",
+	"version": "1.0.12",
+	"main": "index.js",
+	"module": "index.js",
 	"exports": {
 		".": {
-			"import": "./dist/index.js",
-			"require": "./dist/index.js"
+			"import": "./index.js",
+			"require": "./index.js"
 		}
 	},
 	"files": [
-		"dist"
+		"index.js"
 	],
 	"license": "ISC",
 	"dependencies": {
-		"@typescript-eslint/eslint-plugin": "^8.46.1",
-		"@typescript-eslint/parser": "^8.46.1",
-		"eslint": "^9.38.0",
+		"@typescript-eslint/eslint-plugin": "8.9.0",
+		"@typescript-eslint/parser": "8.9.0",
 		"eslint-define-config": "^2.1.0",
-		"eslint-plugin-eslint-comments": "^3.2.0",
-		"eslint-plugin-import": "^2.32.0",
-		"eslint-plugin-vue": "^10.5.1",
-		"eslint-config-dzh-base": "workspace:^"
+		"eslint-plugin-eslint-comments": "3.2.0",
+		"eslint-plugin-import": "2.26.0",
+		"eslint-plugin-markdown": "3.0.0",
+		"eslint-plugin-vue": "^9.33.0"
+	},
+	"devDependencies": {
+		"eslint": "^8.57.1"
+	},
+	"peerDependencies": {
+		"eslint": "^8.0.0"
 	}
 }
